@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f5f7fa;
+}
+
+header {
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+  background: #0b1f3a;
+
+  padding: 15px 40px;
+}
+
+nav {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+
+  font-weight: 700;
+
+  color: white;
+}
+
+nav ul {
+  display: flex;
+
+  list-style: none;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+
+  color: white;
+
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #d4af37;
+}
+
+.hero {
+  height: 90vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/hero.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  color: white;
+}
+
+.hero h1 {
+  font-size: 60px;
+}
+
+.hero p {
+  font-size: 24px;
+
+  margin: 20px 0;
+}
+
+.btn {
+  background: #d4af37;
+
+  padding: 15px 30px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  color: white;
+}
+
+.service {
+  padding: 80px 50px;
+}
+
+.service h2 {
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.card {
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+footer {
+  background: #0b1f3a;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+}
+/*11111111111111111111111111111111111111111111111111111111111111111111111111111111111111*/
+
+.company-profile {
+  max-width: 1200px;
+
+  margin: 80px auto;
+
+  padding: 0 20px;
+}
+
+.cover {
+  height: 300px;
+
+  overflow: hidden;
+
+  border-radius: 20px 20px 0 0;
+}
+
+.cover img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.profile-card {
+  background: #fff;
+
+  display: flex;
+
+  gap: 30px;
+
+  padding: 30px;
+
+  border-radius: 0 0 20px 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+  position: relative;
+}
+
+.logo img {
+  width: 150px;
+
+  height: 150px;
+
+  border-radius: 50%;
+
+  border: 6px solid #fff;
+
+  object-fit: cover;
+}
+
+.company-info {
+  flex: 1;
+}
+
+.company-info h2 {
+  font-size: 36px;
+
+  color: #0b1f3a;
+
+  margin-bottom: 10px;
+}
+
+.followers {
+  font-size: 18px;
+
+  font-weight: 600;
+
+  color: #777;
+
+  margin-bottom: 20px;
+}
+
+.company-info p {
+  font-size: 20px;
+
+  line-height: 1.8;
+}
+
+.contact-row {
+  display: flex;
+
+  gap: 30px;
+
+  margin: 25px 0;
+
+  font-size: 20px;
+
+  font-weight: 600;
+}
+
+.follow-btn {
+  display: inline-block;
+
+  padding: 15px 40px;
+
+  background: #0b57d0;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 10px;
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.follow-btn:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .logo {
+    display: flex;
+
+    justify-content: center;
+  }
+
+  .contact-row {
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .company-info h2 {
+    font-size: 28px;
+  }
+}
+nav ul li a {
+  color: white;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  padding: 10px 15px;
+
+  border-radius: 8px;
+
+  transition: 0.3s;
+}
+
+/* เมื่อนำเมาส์ไปชี้ */
+
+nav ul li a:hover {
+  color: #d4af37;
+}
+
+/* หน้าที่กำลังใช้งาน */
+
+nav ul li a.active {
+  color: #d4af37;
+
+  position: relative;
+}
+
+/* ขีดเส้นใต้ */
+
+nav ul li a.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -8px;
+
+  width: 100%;
+
+  height: 3px;
+
+  background: #d4af37;
+
+  border-radius: 10px;
+}
